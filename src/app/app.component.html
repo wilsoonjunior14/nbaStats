@@ -1,13 +1,17 @@
-<p-toolbar class="toolbar app-toolbar">
+<p-toolbar class="whiteBackground toolbar app-toolbar">
+    <div class="ui-toolbar-group-left">
+        <button pButton type="button" label="NBA" disabled class="ui-button-rounded ui-button-secondary"></button>
+    </div>
     <div class="ui-toolbar-group-right">
         <button pButton type="button" icon="pi pi-print" (click)="print()"></button>
     </div>
 </p-toolbar>
 
 <div class="app">
-    <h1>NBA</h1>
+    <input class="search-box" type="text" pInputText maxlength="255" placeholder="Which team are you looking for?" />
+    <p-button icon="pi pi-search"></p-button>
 
-    <h2>East Conference</h2>
+    <h2>Eastern Conference</h2>
     <div class="app-container">
         <p-card *ngFor="let team of teamsEast" class="app-container-card" styleClass="ui-card-shadow">
             <img src="Card" src="http://localhost:3000/img/{{team.nickname}}.png" class="logo-team" />
@@ -17,7 +21,7 @@
         </p-card>
     </div>
 
-    <h2>West Conference</h2>
+    <h2>Western Conference</h2>
     <div class="app-container">
         <p-card *ngFor="let team of teamsWest" class="app-container-card" styleClass="ui-card-shadow">
             <img src="Card" src="http://localhost:3000/img/{{team.nickname}}.png" class="logo-team" />

@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
 import {CardModule} from 'primeng/card';
+import {InputTextModule} from 'primeng/inputtext';
 import {ToolbarModule} from 'primeng/toolbar';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -21,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonModule,
     CardModule,
     ToolbarModule,
+    ProgressSpinnerModule,
+    InputTextModule,
     HttpClientModule,
     BrowserAnimationsModule,
   ],
