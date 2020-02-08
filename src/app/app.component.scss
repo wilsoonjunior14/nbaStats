@@ -1,0 +1,37 @@
+$background:#e8e5e5;
+
+.app{
+    margin-top: 60px;
+
+    h1, h2, h3{
+        text-align: center;
+    }
+
+    &-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-box{
+            width: 100%;
+            text-align: center;
+        }
+        
+        &-card{
+            width: 280px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        &-card:hover{
+            background-color: black;
+        }
+        
+        .logo-team{
+           transform: translateX(75%);
+           width: 100px !important;
+           height: 100px !important; 
+        }
+    }
+}

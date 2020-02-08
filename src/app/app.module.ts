@@ -5,7 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
+import {CardModule} from 'primeng/card';
 import {ToolbarModule} from 'primeng/toolbar';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import {ToolbarModule} from 'primeng/toolbar';
     AppRoutingModule,
     BrowserModule,
     ButtonModule,
+    CardModule,
     ToolbarModule,
+    HttpClientModule,
     BrowserAnimationsModule,
   ],
   providers: [],
