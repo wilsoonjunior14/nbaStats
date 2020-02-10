@@ -1,6 +1,7 @@
 const constantes = {
-    URL: "http://192.168.0.37:3000",
-    URL_GET_TEAMS: "/"
+    URL: "http://localhost:3000",
+    URL_GET_TEAMS: "/",
+    URL_GET_TEAM: "/teams/"
 };
 
 export default constantes;

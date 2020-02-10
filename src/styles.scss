@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+$background: #e8e5e5;
 
 body{
     background-color: #e8e5e5;
@@ -11,4 +12,75 @@ body{
     width: 100%;
     margin-bottom: 30px;
     background: white;
+}
+
+.app{
+    margin-top: 60px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.app{
+    margin-top: 60px;
+
+    h1, h2, h3{
+        text-align: center;
+    }
+
+    .search-box{
+        min-width: 240px;
+        margin-left: 15px;
+    }
+
+    &-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        &-box{
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 1.4rem;
+        }
+
+        &-position{
+            margin-left: 0;
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: 3px;
+            background: $background;
+            color: black;
+            font-weight: bold;
+        }
+        
+        &-card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 5px;
+            max-width: 280px;
+            justify-content: center;
+            cursor: pointer;
+            text-align: center;
+            color: black;
+        }
+
+        &-card:hover{
+            border: 2px solid red;
+        }
+        
+        .logo-team{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%; 
+        }
+    }
 }

@@ -13,6 +13,7 @@ import {CardModule} from 'primeng/card';
 export class DashboardComponent implements OnInit {
   title = 'nbaStats';
   teams = [];
+  request: Boolean = false;
 
   teamsWest    = [];
   teamsEast = [];
@@ -25,6 +26,7 @@ export class DashboardComponent implements OnInit {
   }
 
   async getTeams(){
+    this.request = true;
     let response = await this.nbaService.getTeams().toPromise();
     this.teams = response["data"];
 
@@ -32,6 +34,7 @@ export class DashboardComponent implements OnInit {
       if (item.conference == 'West') this.teamsWest.push(item);
       if (item.conference == 'East') this.teamsEast.push(item);
     });
+    this.request = false;
   }
 
   print(){

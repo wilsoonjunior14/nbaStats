@@ -14,4 +14,8 @@ export class NbaServiceService {
   getTeams(){
     return this.httpClient.get(constantes.URL + constantes.URL_GET_TEAMS, {});
   }
+
+  getTeam(id, idTeam, year){
+    return this.httpClient.get(constantes.URL + constantes.URL_GET_TEAM+id+"/"+idTeam+"/"+year, {});
+  }
 }

@@ -17,6 +17,7 @@ import { TeamDetailsComponent } from './team-details/team-details.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
+  { path: 'team/:id/:teamId', component: TeamDetailsComponent}
 ];
 
 @NgModule({
