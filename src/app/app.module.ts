@@ -11,12 +11,24 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { TeamDetailsComponent } from './team-details/team-details.component';
+
+const appRoutes: Routes = [
+  { path: '', component: DashboardComponent },
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    TeamDetailsComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+    ),
     BrowserModule,
     AppRoutingModule,
     BrowserModule,

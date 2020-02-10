@@ -6,28 +6,4 @@
         <button pButton type="button" icon="pi pi-print" (click)="print()"></button>
     </div>
 </p-toolbar>
-
-<div class="app">
-    <input class="search-box" type="text" pInputText maxlength="255" placeholder="Which team are you looking for?" />
-    <p-button icon="pi pi-search"></p-button>
-
-    <h2>Eastern Conference</h2>
-    <div class="app-container">
-        <p-card *ngFor="let team of teamsEast" class="app-container-card" styleClass="ui-card-shadow">
-            <img src="Card" src="http://localhost:3000/img/{{team.nickname}}.png" class="logo-team" />
-            <div class="app-container-box">
-                <B>{{team.name}}</B>
-            </div>
-        </p-card>
-    </div>
-
-    <h2>Western Conference</h2>
-    <div class="app-container">
-        <p-card *ngFor="let team of teamsWest" class="app-container-card" styleClass="ui-card-shadow">
-            <img src="Card" src="http://localhost:3000/img/{{team.nickname}}.png" class="logo-team" />
-            <div class="app-container-box">
-                <B>{{team.name}}</B>
-            </div>
-        </p-card>
-    </div>
-</div>
+<router-outlet></router-outlet>

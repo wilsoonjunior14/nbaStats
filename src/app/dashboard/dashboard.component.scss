@@ -1,0 +1,43 @@
+$background:#e8e5e5;
+
+.app{
+    margin-top: 60px;
+
+    h1, h2, h3{
+        text-align: center;
+    }
+
+    .search-box{
+        min-width: 240px;
+        margin-left: 15px;
+    }
+
+    &-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        &-box{
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+        
+        &-card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 5px;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .logo-team{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%; 
+        }
+    }
+}

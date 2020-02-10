@@ -11,29 +11,9 @@ import {CardModule} from 'primeng/card';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nbaStats';
-  teams = [];
-
-  teamsWest    = [];
-  teamsEast = [];
 
   constructor(private nbaService: NbaServiceService){
-    this.getTeams();
+    
   }
-
-  async getTeams(){
-    let response = await this.nbaService.getTeams().toPromise();
-    this.teams = response["data"];
-
-    this.teams.forEach((item) => {
-      if (item.conference == 'West') this.teamsWest.push(item);
-      if (item.conference == 'East') this.teamsEast.push(item);
-    });
-  }
-
-  print(){
-    window.print();
-  }
-
 
 }
