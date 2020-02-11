@@ -4,6 +4,7 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {InputTextModule} from 'primeng/inputtext';
 import {NbaServiceService} from '../service/nba-service.service';
 import {CardModule} from 'primeng/card';
+import {TableModule} from 'primeng/table';
 
 @Component({
   selector: 'app-dashboard',

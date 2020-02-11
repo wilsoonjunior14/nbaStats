@@ -9,6 +9,7 @@ import {CardModule} from 'primeng/card';
 import {InputTextModule} from 'primeng/inputtext';
 import {ToolbarModule} from 'primeng/toolbar';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import {TableModule} from 'primeng/table';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     BrowserModule,
     ButtonModule,
+    TableModule,
     CardModule,
     ToolbarModule,
     ProgressSpinnerModule,

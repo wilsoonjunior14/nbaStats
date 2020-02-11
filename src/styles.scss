@@ -18,6 +18,28 @@ body{
     margin-top: 60px;
 }
 
+.app-spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-logo{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.float-left{
+    float: left;
+}
+
+.padding-20{
+    padding: 25px;
+    text-align: center;
+}
+
+
 .text-center{
     text-align: center;
 }
@@ -31,14 +53,13 @@ body{
 
     .search-box{
         min-width: 240px;
-        margin-left: 15px;
     }
 
     &-container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         
         &-box{
             width: 100%;
@@ -62,7 +83,7 @@ body{
         
         &-card{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
             margin: 5px;
             max-width: 280px;
